@@ -9,4 +9,5 @@ public class Math {
 	public static double sqrt (double n) {
 		return Math.sqrt(n);
 	}
+
 }
