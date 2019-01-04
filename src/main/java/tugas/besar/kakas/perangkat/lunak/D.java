@@ -1,7 +1,8 @@
 package tugas.besar.kakas.perangkat.lunak;
 
-public class A {
-	public A() {
+public class D {
+
+	public D() {
 		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());
 	}
 
