@@ -23,7 +23,6 @@ public class C {
 		return n1 / n2;
 	}
 
-	@Override
 	public String toString() {
 		return "toString di kelas " + this.getClass().getSimpleName();
 	}

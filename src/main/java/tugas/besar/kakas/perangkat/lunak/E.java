@@ -23,7 +23,6 @@ public class E {
 		this.dataList = dataList;
 	}
 
-	@Override
 	public String toString() {
 		return "toString di kelas " + this.getClass().getSimpleName();
 	}
