@@ -1,18 +1,50 @@
 package tugas.besar.kakas.perangkat.lunak;
 
-import junit.framework.TestCase;
+import static org.junit.Assert.assertEquals;
 
-public class CTest extends TestCase {
-	C c = new C();
-	
-	public void addTest1() {
-		c.setN1(2);
-		c.setN2(3);
-		double n1 = c.getN1();
-		double n2 = c.getN2();
-		assertEquals(5, c.add());
+import org.junit.Before;
+import org.junit.Test;
+
+public class CTest {
+	// C c = new C();
+	private C c;
+
+	@Before
+	public void setUp() throws Exception {
+		c = new C();
 	}
 	
+	@Test
+	public void addTest() {
+		assertEquals(0, c.add());
+	}
+	
+	@Test 
+	public void subTest() {
+		assertEquals(0, c.sub());
+	}
+	
+	@Test
+	public void mulTest() {
+		assertEquals(0, c.mul(), 0.00);
+	}
+	
+	@Test
+	public void divTest() {
+		assertEquals(Double.NaN, c.div(), 0.00);
+	}
+	
+	@Test
+	public void modTest() {
+		assertEquals(2, c.mod(18, 4));
+	}
+	
+	@Test
+	public void sqrtTest() {
+		assertEquals(7, c.sqrt(49), 0.00);
+	}
+	
+	@Test
 	public void toStringTest() {
 		assertEquals("toString di kelas C", c.toString());
 	}

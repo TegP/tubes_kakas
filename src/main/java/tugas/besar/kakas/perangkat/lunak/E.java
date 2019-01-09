@@ -5,7 +5,7 @@ import java.util.List;
 
 public class E {
 
-	private List dataList = new ArrayList();
+	private List<String> dataList = new ArrayList<String>();
 
 	public E() {
 		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());

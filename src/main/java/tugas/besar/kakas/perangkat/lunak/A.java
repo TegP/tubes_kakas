@@ -5,12 +5,12 @@ public class A implements AddAndSubInterface {
 		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());
 	}
 	
-	@Override
+//	@Override
 	public int add(int n1, int n2) {
 		return n1+n2;
 	}
 
-	@Override
+//	@Override
 	public int sub(int n1, int n2) {
 		return n1-n2;
 	}

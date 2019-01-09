@@ -6,17 +6,17 @@ public class B implements MulAndDivInterface {
 		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());
 	}
 	
-	@Override
+//	@Override
 	public double pow(double n1, double n2) {
 		return java.lang.Math.pow(n1, n2);
 	}
 
-	@Override
+//	@Override
 	public double mul(double n1, double n2) {
 		return n1*n2;
 	}
 
-	@Override
+//	@Override
 	public double div(double n1, double n2) {
 		return n1/n2;
 	}

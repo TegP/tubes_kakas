@@ -1,16 +1,31 @@
 package tugas.besar.kakas.perangkat.lunak;
 
-import junit.framework.TestCase;
+import static org.junit.Assert.assertEquals;
 
-public class DTest extends TestCase {
-	
-	D d = new D();
-	
-	public void test1() {
-		assertEquals("Ctor di kelas D", d);
+import org.junit.Before;
+import org.junit.Test;
+
+public class DTest {
+
+	// D d = new D();
+	private D d;
+
+	// public void test1() {
+	// assertEquals("Ctor di kelas D", d);
+	// }
+
+	@Before
+	public void setUp() throws Exception {
+		d = new D();
 	}
-	
-	public void test2() {
+
+	@Test
+	public void powTest() {
+		assertEquals(125, d.pow(5, 3), 0.00);
+	}
+
+	@Test
+	public void toStringTest() {
 		assertEquals("toString di kelas D", d.toString());
 	}
 }
