@@ -12,14 +12,14 @@ public class E {
 	}
 
 	public boolean contains(String n) {
-		return true;
+		return dataList.contains(n);
 	}
 
-	public List getDataList() {
+	public List<String> getDataList() {
 		return dataList;
 	}
 
-	public void setDataList(List dataList) {
+	public void setDataList(List<String> dataList) {
 		this.dataList = dataList;
 	}
 
