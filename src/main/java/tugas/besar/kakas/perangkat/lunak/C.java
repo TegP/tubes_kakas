@@ -6,11 +6,11 @@ public class C extends Math {
 	private B b;
 
 	public C() {
-		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());
-		this.n1 = 0;
-		this.n2 = 0;
 		a = new A();
 		b = new B();
+		System.out.println("Ctor di kelas " + this.getClass().getSimpleName());
+		this.n1 = 0;
+		this.n2 = 0;		
 	}
 
 	public int add() {
